@@ -1,0 +1,411 @@
+.main{
+	max-width: 960px;
+	background: #fff;
+	box-shadow: 0 0 10px #ebeaea;
+	margin: 25px auto 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-div{
+	max-width: 960px;
+	margin: 10px auto 0;
+	padding-bottom: 30px;
+	background: #fff;
+	justify-content: space-between;
+}
+
+.main-nav{
+	display: flex;
+	padding: 30px;
+}
+
+.user-info-nav{
+	display: flex;
+	padding: 0 30px 30px;
+}
+
+.user-others{
+	padding: 40px;
+}
+
+.user-page-head-img, .user-page-head-div{
+	width: 100px;
+	height: 100px;
+	border-radius:100px;
+	display: inline-block;
+
+}
+
+.name-job{
+	margin-left: 20px;
+	justify-content: space-around;
+	max-width: 70%
+}
+
+.name{
+	padding-top: 10px;
+	word-break:keep-all;
+	min-width: 200px;
+	font-size: 28px;
+}
+
+.job{
+	padding: 10px 0px;
+	font-size: 16px;
+	color: #007FFF;
+	line-height: 20px;
+	display: flex;
+}
+
+.introduction{
+	line-height: 20px;
+	display: flex;
+	font-size: 16px;
+}
+
+.job img, .introduction img{
+	width: 20px;
+	height: 20px;
+	margin-right:10px;
+}
+
+.site-div{
+	display:block;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 70px;
+}
+.site-div img{
+	width: 20px;
+	height: 20px;
+}
+.site{
+	display: flex;
+}
+.site li{
+	display:inline-block;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.edit-div{
+	margin-top: 40px;
+}
+
+.edit-div input{
+	border: 1px solid #007FFF;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #007FFF;
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+.follow-div, .following-div{
+	margin-top: 40px;
+}
+
+.follow-div input{
+	border: 1px solid #92c452;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #92c452;
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	outline: none;
+}
+
+.following-div input{
+	border: 1px solid #92c452;
+	border-radius: 5px;
+	background-color: #92c452;
+	color: #FFFFFF;
+	width: 150px;
+	height: 40px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	outline: none;
+}
+
+.one-item, .one-user{
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.one-item:hover, .one-user:hover{
+	/*background-color: #f4f5f5;*/
+}
+
+.list-header{
+	padding:30px 30px 0px 30px;
+}
+
+.my-title-div{
+	max-width: 760px;
+	margin-bottom: 20px;
+}
+
+.my-title{
+	font-size: 20px;
+}
+
+.label-time{
+	font-size: 14px;
+	color: #ADADAD;
+}
+
+.labels{
+	margin-right: 15px;
+}
+
+.content-right{
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+
+.list-header-div{
+	border-bottom: 1px solid #C0C0C0;
+	width: 960px;
+}
+
+.list-header{
+	max-width: 960px;
+}
+.list-header a{
+	width:100px;
+	height: 50px;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 400;
+	/*border: 1px solid #000000;*/
+}
+
+.list-header a:hover{
+	color: #007FFF;
+}
+
+.topic{
+	border-bottom: 2px solid #007FFF;
+	color: #007FFF;
+}
+
+.edit-topic{
+	color: #007FFF;
+}
+
+.follow-nav{
+	display: flex;
+}
+
+.follow-head-pic{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.follow-name-job{
+	margin-left: 20px;
+}
+
+.follow-name{
+	font-size: 18px;
+	margin-top:2px;
+}
+
+.follow-job{
+	font-size: 14px;
+	color: #ADADAD;
+	margin-top: 12px;
+}
+
+.follower-btn, .following-btn{
+	margin-right: 10px;
+	line-height: 50px;
+}
+
+.follower-btn input{
+	width: 100px;
+	height: 35px;
+	border: 1px solid #92c452;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	color: #92c452;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+}
+
+.following-btn input{
+	width: 100px;
+	height: 35px;
+	border: 1px solid #92c452;
+	border-radius: 5px;
+	background-color: #92c452;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+}
+
+.hide{
+	display: none;
+}
+
+/*个人资料CSS*/
+
+.info-div{
+	width: 700px;
+	margin: 0px 100px;
+	word-break: keep-all;
+}
+
+.edit-info-title{
+	font-size: 20px;
+	line-height: 80px;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.option ul li{
+	padding: 25px;
+	align-items: center;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.option span{
+	font-size: 16px;
+}
+
+.input-text{
+	height: 30px;
+	width: 380px;
+	border: none;
+	font-size: 16px;
+	font-family: Microsoft YaHei;
+	outline: none;
+}
+
+.edit-one-div, .save-cancel, .edit-email, .edit-phone, .edit-password{
+	text-align: center;
+	min-width: 120px;
+	justify-content: center;
+}
+
+.edit-img{
+	width: 18px;
+	height: 18px;
+	margin-bottom: 5px;
+	vertical-align:middle;
+	cursor: pointer;
+}
+
+.input-btn{
+	line-height: 30px;
+	height: 30px;
+	width: 50px;
+	border: none;
+	background-color: #FFFFFF;
+	color: #007FFF;
+	font-size: 16px;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+}
+
+.option-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.edit-info-title a{
+	margin-right: 50px;
+}
+
+.edit-info-title a:hover{
+	color: #007FFF;
+}
+
+.fileInputContainer {
+     padding: 10px;
+     position: relative;
+     display: inline;
+     color: #FFFFFF;
+     background-color: #007fff;
+     border: none;
+     border-radius: 3px;
+     overflow: hidden;
+     cursor: pointer;
+     zoom: 1;
+ }
+
+.file{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    outline: none;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: pointer;
+}
+.change-pic-btn{
+	margin-right: 25px;
+}
+.changed-head-pic{
+	margin-right: 120px;
+	height: 150px;
+	width: 150px;
+}
+
+.verificationCode {
+	width: 140px;
+}
+
+.getPhoneCode, .getEmailCode {
+	margin-right: 30px;
+	height: 36px;
+	width: 100px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+
+.phone-code-container, .email-code-container {
+	justify-content: flex-end;
+}
+
+.phone-verification, .email-verification {
+	border: 1px solid #dadada;
+	padding-left: 5px;
+	width: 50%;
+	height: 35px;
+}
+
+.password-container {
+	justify-content: flex-start;
+}
+
+#newPassword {
+	margin-left: 100px;
+}
+
+#confirmNewPassword {
+	margin-left: 65px;
+}

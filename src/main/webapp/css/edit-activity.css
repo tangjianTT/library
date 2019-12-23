@@ -1,0 +1,130 @@
+.main {
+	max-width: 960px;
+	margin: 25px auto 0;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0 10px #ebeaea;
+	font-family: "微软雅黑";
+}
+
+.base-info-container{
+	margin: 0 0 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.data-container{
+	color: #71777c;
+}
+
+.data-container input{
+	height: 35px;
+	width: 300px;
+	padding-left: 8px ;
+	margin: 10px 0 15px 0;
+	outline: none;
+	border: 1px solid #B2B2B2;
+	border-radius: 2px;
+	font-size: 15px;
+}
+
+.start-time-container input{
+	margin-bottom: 5px;
+}
+
+.others{
+	margin-top: 28px;
+	margin-right: 6%;
+}
+
+.operation-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cover-container{
+	width: 400px;
+	height: 250px;
+    margin-bottom: 15px;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.cover-container img{
+	width: 400px;
+	height: 255px;
+	border-radius: 5px;
+}
+
+.cover-tip{
+	text-align: center;
+	line-height: 250px;
+}
+
+.cover-tip img{
+	width: 50px;
+	height: 50px;
+}
+
+.upload-container{
+	display: flex;
+	justify-content: center;
+}
+
+.file-input-container {
+	padding: 11px 170px;
+	position: relative;
+	display: inline;
+	color: #FFFFFF;
+	background-color: #007fff;
+	border: none;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	zoom: 1;
+}
+
+.file{
+	position: absolute;
+	width: 396px;
+	height: 42px;
+	right: 0;
+	top: 0;
+	outline: none;
+	background-color: transparent;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	cursor: pointer;
+}
+
+.publish-activity{
+	width: 306px;
+    height: 41px;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background-color: #007fff;
+    cursor: pointer;
+}
+
+.toolbar-container{
+	margin-top: 20px ;
+}
+
+.title-container{
+	min-width: 700px;
+}
+
+.title-input{
+	margin: 20px 0 0 8px ;
+	width: 90%;
+	height: 40px;
+	font-size: 24px;
+	border: none;
+	outline:none;
+}
+
+.text{
+	height: 600px;
+}

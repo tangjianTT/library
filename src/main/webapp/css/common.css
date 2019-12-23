@@ -1,0 +1,115 @@
+/*admin*/	
+/* 公共样式 */
+body, input, button{
+    background: #f4f5f5;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
+}
+
+.main-panel {
+	font-weight: 300;
+}
+
+
+
+.card-swapper, .card-swapper ul{
+	width: 100%;
+	background-color: #f1f2f7;
+}
+
+.card-swapper ul{
+	display: flex;
+}
+
+.card-swapper ul li {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 0 10px;
+	width: 25%;
+	height: 120px;
+	/*border: 1px solid #DDDDDD;*/
+	border-radius: 5px;
+	color: #999999;
+	background-color: #FFFFFF;
+}
+
+.icon-swapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.icon-swapper i {
+	font-size: 54px;
+	color: #FFFFFF;
+}
+
+.users-color {
+	background-color: #0099CC;
+}
+
+.articles-color {
+	background-color: #FF6666;
+}
+
+.new-articles-color {
+	background-color: #669999;
+}
+
+.activities-color {
+	background-color: #FFCC99;
+}
+
+.data-swapper {
+	width: 50%;
+}
+
+.data-num {
+	color: #555555;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+
+.seacher-swapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.input-short {
+	width: 20%;
+	margin: 0;
+}
+
+.input-search {
+	color: #444444;
+}
+
+.icon-search {
+	height: 34px;
+}
+
+.row {
+	margin-top: 15px;
+}
+
+.no-paging{
+	display: none;
+}
+
+.login-wrap input{
+	color: #444444;
+}
+
+.echarts-container {
+	height: 500px;
+	margin: 60px 10px 10px 10px;
+}
+
+.echarts-data {
+	height: 500px;
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.library.modules.org.dao.ActOrganizationDao">
+    
+	<sql id="actOrganizationColumns">
+		a.id AS "id",
+		a.title AS "title",
+		a.office_id AS "office.id",
+		a.act_describe AS "actDescribe",
+		a.place AS "place",
+		a.start_date AS "startDate",
+		a.end_date AS "endDate",
+		a.state AS "state",
+		a.count AS "count",
+		a.create_date AS "createDate",
+		a.create_by AS "createBy.id",
+		a.update_by AS "updateBy.id",
+		a.update_date AS "updateDate",
+		a.del_flag AS "delFlag",
+		o3.name AS "office.name"
+	</sql>
+	
+	<sql id="actOrganizationJoins">
+		LEFT JOIN sys_office o3 ON o3.id = a.office_id
+	</sql>
+    
+	<select id="get" resultType="ActOrganization">
+		SELECT 
+			<include refid="actOrganizationColumns"/>
+		FROM act_organization a
+		<include refid="actOrganizationJoins"/>
+		WHERE a.id = #{id}
+	</select>
+	
+	<select id="findList" resultType="com.neusoft.library.modules.org.entity.ActOrganization">
+		SELECT 
+		a.id AS "id",
+		a.title AS "title",
+		a.office_id AS "office.id",
+		a.act_describe AS "actDescribe",
+		a.place AS "place",
+		a.start_date AS "startDate",
+		a.end_date AS "endDate",
+		a.state AS "state",
+		a.count AS "count",
+		a.create_date AS "createDate",
+		a.create_by AS "createBy.id",
+		a.update_by AS "updateBy.id",
+		a.update_date AS "updateDate",
+		a.del_flag AS "delFlag",
+		o3.name AS "office.name",
+		u.flag
+		FROM act_organization a
+		LEFT JOIN sys_office o3 ON o3.id = a.office_id 
+		<if test="userId != null and userId !='' ">
+		 LEFT JOIN  sys_user_org u
+         ON a.id = u.org_id AND u.user_id =#{userId}
+		</if>
+		<if test="userId == null or userId =='' ">
+		 LEFT JOIN  sys_user_org u
+         ON a.id = u.org_id AND u.user_id ='0'
+		</if>
+		<where>
+			a.del_flag = #{DEL_FLAG_NORMAL}
+			<if test="title != null and title != ''">
+				AND a.title LIKE 
+					<if test="dbName == 'oracle'">'%'||#{title}||'%'</if>
+					<if test="dbName == 'mssql'">'%'+#{title}+'%'</if>
+					<if test="dbName == 'mysql'">concat('%',#{title},'%')</if>
+			</if>
+			<if test="office != null and office.id != null and office.id != ''">
+				AND a.office_id = #{office.id}
+			</if>
+			<if test="beginStartDate != null and endStartDate != null and beginStartDate != '' and endStartDate != ''">
+				AND a.start_date BETWEEN #{beginStartDate} AND #{endStartDate}
+			</if>
+		</where>
+		<!-- <choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.update_date DESC
+			</otherwise>
+		</choose> -->
+	</select>
+	
+	<select id="findAllList" resultType="ActOrganization">
+		SELECT 
+			<include refid="actOrganizationColumns"/>
+		FROM act_organization a
+		<include refid="actOrganizationJoins"/>
+		 LEFT JOIN  sys_user_org u
+         ON a.id = u.org_id AND u.user_id = '0'
+		<where>
+			a.del_flag = #{DEL_FLAG_NORMAL}
+		</where>		
+		<choose>
+			<when test="page !=null and page.orderBy != null and page.orderBy != ''">
+				ORDER BY ${page.orderBy}
+			</when>
+			<otherwise>
+				ORDER BY a.update_date DESC
+			</otherwise>
+		</choose>
+	</select>
+	
+	<select id="findActList" resultType="com.neusoft.library.modules.org.entity.ActOrganization">
+	 SELECT o.*,u.flag 
+	   FROM act_organization o 
+	   LEFT JOIN  sys_user_org u
+       ON o.id = u.org_id AND u.user_id =#{userId}
+       WHERE o.del_flag = '0'
+	
+	</select>
+	
+	<insert id="insert">
+		INSERT INTO act_organization(
+			title,
+			office_id,
+			act_describe,
+			place,
+			start_date,
+			end_date,
+			state,
+			count,
+			create_date,
+			create_by,
+			update_by,
+			update_date,
+			del_flag
+		) VALUES (
+			#{title},
+			#{office.id},
+			#{actDescribe},
+			#{place},
+			#{startDate},
+			#{endDate},
+			#{state},
+			'0',
+			NOW(),
+		    #{createBy.id},
+			#{updateBy.id},
+			NOW(),
+			'0'
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE act_organization SET 	
+			title = #{title},
+			office_id = #{office.id},
+			act_describe = #{actDescribe},
+			place = #{place},
+			start_date = #{startDate},
+			end_date = #{endDate},
+			state = #{state},
+			update_date = NOW()
+		WHERE id = #{id}
+	</update>
+	
+	<update id="delete">
+		UPDATE act_organization SET 
+			del_flag = #{DEL_FLAG_DELETE}
+		WHERE id = #{id}
+	</update>
+	<update id="registrationActivities">
+	    UPDATE act_organization SET 
+			count = count + 1
+		WHERE id = #{actOrganizationId}
+	</update>
+	
+	<insert id = "userActivity">
+	   INSERT INTO sys_user_org 
+	     (user_id, 
+	      org_id,
+	      flag,
+	      sign_up_time
+	     )
+	   VALUES
+	    (#{userId}, 
+	     #{actOrganizationId},
+	     '1',
+	     NOW()
+	     );
+	</insert>
+	
+	<select id="findUserOrgList" resultType="com.neusoft.library.modules.org.entity.ActOrganization">
+	   SELECT o.*,u.flag 
+	   FROM act_organization o 
+	   LEFT JOIN  sys_user_org u
+       ON o.id = u.org_id AND u.user_id =#{userId}
+       WHERE o.del_flag = '0'
+       ORDER BY create_date DESC 
+	</select>
+</mapper>

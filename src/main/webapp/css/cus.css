@@ -1,0 +1,511 @@
+/*
+* 猫鈥斅访β疵ヂ��
+* 茅拧赂茅鈥撀�
+* 2017-01-16
+*/
+@charset "utf-8";
+::-webkit-scrollbar,::-moz-scrollbar,::-o-scrollbar,::-ms-scrollbar {width:0px;}
+body{font-family: "\5FAE\8F6F\96C5\9ED1";}
+img{border:none;}
+li{list-style:none;}
+i{font-style: normal;}
+a{text-decoration:none;color:#000;}
+a:hover,
+.aBtn:hover{text-decoration:none;}
+.vertical_middle{vertical-align: middle;}
+/*莽卢聬莽麓虏*/
+.display_none{display:none;}
+.display_block{display:block;}
+.display_inline_block{display:inline-block;}
+.over_h{overflow:hidden;}
+/*茅聛碌氓茠鈥�*/
+.full_w{width:100%;}
+.full_h{height:100%;}
+.half{width:50%;}
+.w_per_80{width:80%;}
+.line_2{border-top:1px dashed #dcdcdc;}
+.w_1000{margin:0px auto;width:1000px;background-color: #fff;}
+.w_1180{margin:0px auto;width:1180px;}
+.w_120{width:100px;}
+.w_150{width:150px;}
+.w_200{width:200px;}
+.w_300{width:300px !important;}
+.w_700{width:700px;}
+/*猫露录忙啪聛忙鹿庐猫鈥孤�*/
+.font_30{font-size:30px;}
+.font_22{font-size:22px;}
+.font_12{font-size:12px;}
+.font_14{font-size: 14px;}
+.font_16{font-size: 16px;}
+
+.font_we_no{font-weight: normal;}
+/*猫露录忙啪聛忙鈩⑩�∶ぢ寂�*/
+.color_fff{color:#fff;}
+.color_999{color:#999;}
+.color_f1342c{color:#f1342c;}
+.color_638bc6{color:#638bc6;}
+/*猫露录忙啪聛*/
+.font_f_Georgia{font-family:Georgia;}
+/*忙鈩⑴∶︹�溾��*/
+.m_0{margin:0;}
+.m_r_10{margin-right:10px;}
+.m_r_20{margin-right:20px;}
+.m_l_5{margin-left:5px;}
+.m_l_10{margin-left:10px;}
+.m_l_15{margin-left:15px;}
+.m_l_20{margin-left:20px;}
+.m_l_40{margin-left:40px;}
+.m_t_0{margin-top:0;}
+.m_t_5{margin-top: 5px;}
+.m_t_10{margin-top: 10px;}
+.m_t_15{margin-top:15px;}
+.m_t_16{margin-top:16px;}
+.m_t_20{margin-top:20px;}
+.m_b_0{margin-bottom:0px;}
+.m_b_10{margin-bottom:10px;}
+.m_b_20{margin-bottom:20px;}
+.p_20{padding:20px;}
+.p_a{padding:5px 10px;}
+.p_a_0{padding:0px !important;}
+.p_t_7{padding-top: 7px;}
+.p_t_10{padding-top:10px;}
+.p_t_15{padding-top:15px;}
+.p_t_20{padding-top:20px;}
+.p_t_40{padding-top:40px;}
+.p_b_10{padding-bottom:10px;}
+.p_b_20{padding-bottom:20px;}
+.p_t_0{padding-top:0px;}
+.p_tb_10{padding:10px 0px;}
+.p_l_10{padding-left: 10px;}
+.p_l_20{padding-left: 20px;}
+.p_l_30{padding-left: 30px;}
+.p_rl_10{padding:0px 10px;}
+.p_rl_20{padding:0px 20px;}
+.p_rl_5{padding:0px 5px;}
+.p_rl_8{padding:0px 8px;}
+.p_rl_15{padding:0px 15px;}
+.p_r_0{padding-right:0px;}
+.p_r_5{padding-right:5px;}
+.p_r_20{padding-right:20px;}
+.p_r_50{padding-right:50px;}
+.p_l_0{padding-left:0px;}
+/*盲驴麓猫漏垄*/
+.line_30{line-height:30px;}
+/*茅拧鈥γヂ尖��*/
+.p_fix{position:fixed;}
+.p_re{position:relative;}
+.p_ab{position:absolute;}
+.p_sta{position:static;}
+/*忙鈥奥访β⑩�溍β疵ヂ��*/
+.cursor_p{cursor:pointer;}
+.cursor_d{cursor:default;}
+/*忙沤鈥撁ヅ犫�溍︹劉鈥∶ぢ寂�*/
+.back_f1342c{background-color:#f1342c !important;}
+.back_f4f4f4{background-color:#f4f4f4;}
+.back_fff div{background-color:#fff;}
+.back_f9f9f9{background-color:#f9f9f9;}
+.back_000{background-color:#000;}
+.back_ddd{background-color:#ddd;}
+/*banner*/
+.banner{height:350px;}
+.clearHover:hover{color:#000;}
+.tag_icon_banner span{display:inline-block;margin-right:10px;width:10px;height:10px;border-radius:50%;background-color:#ccc;cursor:pointer;}
+.tag_icon_banner .active{background-color:#f1342c;}
+.change_click{display:none;top:135px;width:40px;height:80px;line-height:80px;text-align:center;background-color:#000;opacity:0.5;color:#fff;font-size:30px;cursor:pointer;z-index:10;}
+.prev_click{left:0;}
+.next_click{right:0;}
+/*video_list*/
+.video_class_list{width:730px;}
+.video_host_list{width:265px;}
+.sign_video_list a{width:220px;margin-right:20px;vertical-align: top;}
+.sign_video_list a>img{width:100%;height:140px;}
+.host_list a img{margin-top: 2px;margin-right: 2px;width: 75px;height: 50px;vertical-align: baseline;}
+.titleClassVideo{line-height:40px;color:#000;font-weight: bold;}
+
+.moreClass{margin-right:22px;color: #999;}
+.className:hover,
+.moreClass:hover{color: #F1342C;}
+.lookNumPhone{width:12px;height:12px;margin-top: -3px;margin-right: 10px;}
+.state {display: inline-block;height: 16px;line-height: 16px;padding: 0 8px;background: #F1342C;border-radius: 8px;color: #fff;margin-left: 10px;}
+.state_gray{background: #d6d6d6;cursor: default;}
+.play_cus_icon{left:50%;top:70px;margin-left:-24px;margin-top:-24px;width:48px;height:48px;border-radius:50%;background-color:#000;opacity:0.5;}
+.play_cus_icon:before{content: "";position: absolute;top: 11px;left: 20px;width: 0px;height: 0px;border: 12px solid transparent;border-left-color: rgb(255,255,255);}
+
+.course_total,.course_class{background-color:#f9f9f9;border:1px solid #eee;}
+.course_class{padding:25px 30px;}
+.course_class_nav{margin-left:50px;}
+.course_class_nav span{display:inline-block;padding:5px 10px;border-radius:5px;}
+.course_class_nav span:hover{color:#F1342C;}
+.course_class_nav .active{background-color:#f1342c;color:#fff;}
+.course_class_nav .active:hover{color:#fff;}
+
+.course_total{padding:20px 15px;}
+.course_total i{padding:0 2px;color: #F1342C;}
+.courseList>a{width:280px;}
+.courseList>a>img{width:100%;height:160px;}
+.course_tag_class{border:1px solid #f1342c;border-radius:5px;padding:2px 4px;color:#f1342c;}
+
+/*猫芦潞忙艙鈧犫�犆⑩�樎�*/
+.progress{
+	height:15px;
+	background-color:#d9d9d9;
+	border-radius: 0;
+	border:none;
+}
+.progress div{
+	top:0;left:0;
+	background-color:#f1342c;
+	z-index:10;
+}
+.progress:after{
+	border:none;
+	animation:none !important;
+	-webkit-animation:none !important;
+	width:0;
+	height:0;
+}
+.study_btn{display:block;text-align:center;width:100%;height:50px;font-size:24px;color:#fff;background-color:#f1342c;line-height:50px;border-radius:4px;cursor:pointer;}
+.study_btn:hover,
+.study_btn:active{color:#fff;background-color:#f5030f;}
+.border_bottom_title{
+	line-height:40px;
+	border-bottom:1px solid #efefef;
+}
+.comments_list{height:190px;overflow-y:auto;}
+.comments_list li{padding:20px 0;border-bottom:1px solid #dddddd;}
+.list_tag{
+	height:auto;
+	line-height:42px;
+	cursor:pointer;
+}
+.list_tag .tag_circle{left:-15px;top:10px;display:block;width:26px;height:26px;border:2px solid #f9f9f9;border-radius:50%;}
+.tag_circle_default{background:url("../img/icon_directory.png") no-repeat -7px -277px;}
+.tag_circle_half{background:url("../img/icon_directory.png") no-repeat -8px -244px;}
+.tag_circle_done{background:url("../img/icon_directory.png") no-repeat -8px -212px;}
+
+.play_time{right:40px;top:10px;display:block;padding-left:40px;height:22px;line-height:22px;background:url("../img/icon_directory.png") no-repeat -6px -305px;}
+.read_time{right:40px;top:10px;display:block;padding-left:40px;height:24px;line-height:24px;background:url("../img/readbook.png") no-repeat;opacity: 0.9;}
+.play_time_btn{right:40px;top:4px;}
+.chapter_name{line-height:34px;}
+.chapter_num{
+	left:-80px;top: 18px;
+	display:block;
+	width:100px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	border:2px solid #f9f9f9;
+	border-radius:18px;
+}
+.chapter_sh{
+	right:20px;top:25px;
+	display:block;
+	width:24px;height:24px;
+	background:url("../img/icon_directory.png") no-repeat -2px -356px;
+	cursor:pointer;
+}
+.open_chapter{background:url("../img/icon_directory.png") no-repeat -2px -330px;}
+/*氓录聺茫聛鈥樏р�⒙γβ郝�*/
+.player_detail{width:70%;background-color:#1e1e1e;}
+#player{padding:50px 40px;}
+.return-btn{background:#3e3e3e url('../../img/icon_directory.png') no-repeat 0px -532px;margin-top: 20px;color: #eee;border: none;border-radius: 0;display:inline-block;padding: 6px 15px 6px 30px;position: fixed;}
+.return-btn:hover,.return-btn:focus{color: #fff;text-decoration: none;}
+#player{height:100%;}
+.catalog_detail{width:30%;overflow-y:auto;}
+.collapse_item{display:block;padding: 5px 10px;}
+.nav-tabs{border:none !important;}
+.player_detail .nav{top: 0;right: 0;width: 35px;}
+.player_detail .nav > li > a{background-color: #515151;color: #fff;text-align: center;padding:10px 5px;}
+.player_detail .nav > li > a,
+.player_detail .nav > li > a:hover,
+.player_detail .nav > li > a:focus,
+.player_detail .nav > li.active > a,
+.player_detail .nav > li.active > a:hover{background-color: #515151 !important;border:none !important;}
+.comment_area{width:100%;height:150px;border-color: #ccc;margin:10px 0px;}
+.comment_header{border-bottom:1px solid #ccc;}
+.comment_item{border-bottom:1px dashed #ccc;padding:10px 0;}
+.text_tip{font-size:18px;font-weight:600;}
+.comment_btn{background-color:#e1e1e1;width:90px;}
+.comment_btn_active{background-color:#f1342c;color:#fff;border-color:#f1342c;}
+a.link_click:hover{color:#f1342c;}
+a.link_click:active,a.link_click:focus{color:#000;text-decoration: none;}
+.catalog_title{font-size:15px;font-weight:600;}
+.icon_priase{display: inline-block;background: url('../../img/icon_directory.png') no-repeat -4px -447px;height: 20px;padding:0 10px 0 20px;border-right: 1px solid #ccc;}
+.icon_priase_active{background-position: -4px -426px;}
+.icon_comment{display: inline-block;background: url('../../img/icon_directory.png') no-repeat -4px -468px;height: 20px; padding:0 10px 0 20px;}
+.icon_comment_active{background-position: -4px -491px;}
+
+.topActivity li:hover a,.topActivity li:hover span{color:#F1342C;}
+.numActivity{background:url(/party-build/images/icon_activity.png) no-repeat 10% 55%;}
+.activity_icon_address{background:url(/party-build/images/icon_activity.png) no-repeat -2% 44%;}
+.activity_icon_time{background:url(/party-build/images/icon_activity.png) no-repeat -2% 49.3%;}
+.activityTag{
+	left:10px;top:0;
+	display:block;
+	width:20px;
+	height:70px;
+}
+.activityTag_well{background:url(/party-build/images/icon_activity.png) no-repeat 50% 22%;}
+.activityTag_doing{background:url(/party-build/images/icon_activity.png) no-repeat 8% 22%;}
+.activityTag_close{
+	background:url(/party-build/images/icon_activity.png) no-repeat 92% 22%;
+}
+.classification{width:998px;border:1px solid #eeeeee;}
+.classification .firstType{height:74px;border-bottom:1px solid #eee;}
+.classification .secondeType{height:74px;}
+.classification .typeTitle{width:124px;line-height:74px;text-align:center;font-weight:800;}
+.classification .typeList{padding:24px 15px;}
+.classification .typeList span,.timeClassActivity span{padding:5px 15px;border-radius:3px;cursor:pointer;}
+.classification .typeList .active,.timeClassActivity .active{color:#fff;background-color:#f1342c;}
+
+.conditions{height:153px;width:998px;border:1px solid #eeeeee;}
+.conditions .firstType{height:50px;border-bottom:1px solid #eee;}
+.conditions .secondeType{height:50px;}
+.restSearchConditions:hover{color:#fa7b76;cursor:pointer;}
+.activitySignUp{
+	display:block;
+	margin-top:25px;
+	width:100px;
+	height:30px;
+	line-height:28px;
+	border:1px solid #f1342c;
+	border-radius:3px;
+	background-color:transparent;
+}
+.activitySignUp:hover{background-color:#f1342c;color:#fff;}
+.dateS{height: 30px !important;border-radius: 3px;padding-left:10px;}
+.player_circle{display:inline-block;width:26px;height:26px;border:2px solid #f9f9f9;border-radius:50%;vertical-align: middle;}
+.player_current{background-color:#000;color:#fff;}
+/*莽聽鈥犆⑩�樎�*/
+.headers{height: 262px;}
+.rightInfos p{color: #5d5d5d;}
+.leftIcon{
+	display: inline-block;
+	vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+.addressIcon{background:url("../img/icon_activity.png") no-repeat 0% 100%;}
+.active_detail_partment{background:url("../img/icon_activity.png") no-repeat 4% 38%;}
+.active_detail_time{background:url("../img/icon_activity.png") no-repeat 4% 50%;}
+.active_detail_address{background:url("../img/icon_activity.png") no-repeat 4% 44%;}
+.active_detail_people{background:url("../img/icon_activity.png") no-repeat 4% 55%;}
+.infoTit{color: #333;font-size: 26px;font-weight: 900;}
+.bottomInfo{margin-top: 54px;}
+.bottomInfo span{font-size: 24px;}
+.stabtn{
+    background-color: #f1342c;
+    border-radius: 3px;
+    color: #ffffff;
+    float: right;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    cursor:pointer;
+}
+.ctrtit{
+    padding: 20px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    border-bottom: 1px solid #efefef;
+}
+.ctrter{
+    padding: 20px;
+    padding-bottom: 64px;
+
+}
+.ctrter p{
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+}
+.moreshow{
+    font-size: 12px;
+    cursor: pointer;
+    color:#7e9dce;
+    float: right;
+    margin-top: 16px;
+}
+.btoomsContent{
+    padding: 0 20px;
+    max-height: 560px;
+    overflow-y: auto;
+}
+.setionlist{
+    padding: 20px 0;
+    border-bottom: 1px dashed #ddd;
+}
+.listTit{
+    font-size: 12px;
+    color:#7e9dce;
+    margin-bottom: 10px;
+}
+.btoomsTit{
+    padding: 0 20px 12px 20px;
+    font-size: 16px;
+    font-weight: 900;
+    border-bottom: 1px solid #efefef;
+}
+.listContent{
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.timeClassActivity{width:420px;line-height:30px;}
+.timeClassActivity span{
+	float:left;
+	height:30px;
+	padding:0 10px;
+	cursor:pointer;
+}
+/*莽卤碌莽艙颅茅录聽猫卤垄*/
+.row-wrap {
+    margin-top: 10px;
+}
+.row-wrap .row-main {
+    width: 705px;
+    float: left;
+}
+.row-wrap .row-full {
+    width: 1000px;
+}
+.crumbs {
+    padding: 5px 0;
+    color: #999;
+    font-size: 12px;
+}
+.list-title {
+    border-bottom: 1px solid #d6d6d6;
+}
+.list-title h3 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+.news-list {
+    padding: 10px 20px;
+}
+.news {
+    padding: 8px 0;
+}
+.news-list .news li {
+    position: relative;
+}
+.news-list .news li .news-title {
+    width: 900px;
+}
+
+.news li a .news-title, .news li a .news-txt {
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-list .news li .news-date {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 32px;
+    color: #999;
+}
+.p-t-30 {
+    padding-top: 30px!important;
+}
+.news-detail .official-title {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+.news li a:hover,.news li a:active{color:#F1342C;text-decoration: underline;}
+
+
+
+.p_rl_8{padding:0 8px;}
+.news li a .news-title:before {
+    display: inline-block;
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #666;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.add_cus_btn{
+	line-height: 30px;
+    border-radius: 3px;
+	color:#f8a452;
+	font-size:14px;
+	border:1px solid #f8a452;
+	background-color:#fff;
+}
+.add_cus_btn b{
+	padding-right:10px;
+	font-weight:800;
+}
+
+/*脩艗氓拢潞猫藴鈥∶柯矫徦喢р�毬疵ヂ甭嵜︹�⒙该р�毬该┞郝得┞甭姑柯�*/
+.clear_img_default{
+	left: 145px;
+    top: -8px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ccc;
+    opacity: 0.8;
+}
+.clear_img_default:hover{
+	color:#f8a452;
+}
+.line-35{line-height: 35px;}
+.del_img{
+	position: absolute;
+    left: 140px;
+    top: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor:pointer;
+    z-index: 9;
+}
+.imgList li{
+	float: left;
+	margin-right:10px;
+	margin-bottom:10px;
+    width: 150px;
+}
+.imgList li img{
+	width:100%;
+	height:100%;
+}
+
+#docplayer {
+    width: 100%;
+    height: 100%;
+}
+#playContainer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 50px;
+}
+.img-container{
+    height: 100%;
+    overflow-y: scroll;
+}

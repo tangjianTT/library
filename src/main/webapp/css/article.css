@@ -1,0 +1,322 @@
+.main {
+    max-width: 960px;
+    margin: 25px auto 0;
+    background: #fff;
+    box-shadow: 0 0 10px #ebeaea;
+}
+
+.main-nav{
+	display: flex;
+	width: 20%;
+	max-width: 80%
+}
+
+.article-info{
+	padding: 50px;
+}
+
+.name-time{
+	margin-left: 20px;
+    justify-content: space-around;
+    min-width: 200px;
+}
+.article-head-div, .name{
+	 cursor: pointer;
+}
+
+.article-head-div{
+	width: 50px;
+	display: inline-block;
+}
+
+.article-head-img{
+	width: 50px;
+	height: 50px;	
+	border-radius:50px;
+}
+
+.head-img-medium{
+	width: 40px;
+	height: 40px;	
+	border-radius:40px;
+}
+
+.head-img-small{
+	width: 30px;
+	height: 30px;	
+	border-radius:30px;
+}
+.name{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.title{
+	font-size:24px ;
+	margin: 30px 0px;
+}
+
+.content{
+	font-size: 16px;
+	padding-bottom: 20px;
+	line-height: 30px;
+}
+
+.conment-title{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	color: #555555;
+}
+
+.comment{
+	border-top: 1px solid #9D9D9D;
+	padding: 20px 0px;
+	font-size: 16px;
+}
+
+.comment-text{
+	width: 80%;
+	padding: 20px 0px;	
+	background-color: #F1F1F1;
+	max-width: 960px;
+    margin: 25px auto 0;
+	border-radius: 5px;
+}
+
+.comment textarea{
+	height: 100px;
+	width: 80%;
+	border-radius: 5px;
+	padding: 10px;
+	overflow: hidden;
+	margin: 0px 8%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+.comment-btn {
+	text-align: right;
+	margin-right: 9%;
+	margin-top: 10px;
+}
+
+#my-comment-btn{
+	cursor: pointer;
+}
+
+.comment input{
+	border: none;
+	border-radius: 2px;
+	background-color: #007FFF;
+	color: #FFF;
+	width: 75px;
+	height: 35px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+.item-subtitle {
+	margin-top: 20px;
+	font-size: 12px;
+}
+.item-subtitle-text ::after {
+    /*content: "\B7";*/
+    margin: 0 5px;
+    color: #8f969c;
+}
+
+.item-subtitle-text{
+	display: flex;
+}
+
+.item-subtitle ul li{
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	border: 1px solid #edeeef;
+	color: #b2bac2;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+#article-operate ul li{
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	border: 1px solid #edeeef;
+	color: #b2bac2;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.one-comment{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.user-base-info{
+	display: flex;
+	align-items: center;
+}
+
+.head-name{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.comment-user-name{
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.job, .time, .reply{
+	color: #8D8D8D;
+}
+
+.comment-content{
+	margin: 5px 0 0 50px;
+	font-size: 14px;
+	max-width: 100%;
+	line-height: 20px;
+}
+
+.comment-operate{
+	height: 20px;
+	margin: 10px 50px;
+	line-height: 18px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.comment-content span{
+	font-size: 13px;
+	color: #666666;
+}
+
+.comment-cursor{
+	cursor: pointer;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+	margin-right: 8px;
+}
+
+.comment-hover a:hover{
+	color: #007FFF;
+}
+
+.comment-time{
+	margin: auto 20px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.reply-list{
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	padding: 10px 30px;
+	width: 80%;
+	margin: auto;
+}
+
+.reply-list ul li{
+	margin-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.reply-content{
+	margin: 5px 0 5px 40px;
+	font-size: 12px;
+	max-width: 90%;
+	line-height: 20px;
+}
+
+.reply-content a{
+	color: #007FFF;
+}
+
+.reply-operate{
+	margin: 0 0 5px 40px;
+}
+
+.reply{
+	margin-left: 10px;
+}
+
+.reply-operate a:hover{
+	color: #007FFF;
+}
+
+.reply-list textarea{
+	height: 16px;
+	width: 75%;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-left: 5%;
+	padding: 10px 10px 15px 10px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border: 1px solid #DDDDDD;
+}
+
+.reply-list input{
+	border: none;
+	border-radius: 5px;
+	background-color: #007FFF;
+	height: 36px;
+	width: 70px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #FFFFFF;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.reply-input{
+	display: flex;
+	justify-content:inherit;
+	margin: 20px 0 0 0;
+}
+
+.reply-div{
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	padding: 10px 30px;
+	width: 78%;
+	margin: auto;
+}
+
+.agree-img{
+	height: 20px;
+	width: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.comment-img{
+	height: 20px;
+	width: 20px;
+}
+
+.normal{
+	color: #b2bac2;
+}
+
+.liked{
+	color: #1dc400;
+}
+
+.collected{
+	color: #1dc400;
+}

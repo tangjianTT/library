@@ -1,0 +1,108 @@
+.main {
+	max-width: 960px;
+	margin: 25px auto 0;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0 10px #ebeaea;
+	font-family: "微软雅黑";
+}
+
+.activity-header{
+	padding: 20px 20px 0;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+.user-info-container{
+	display: flex;
+	width: 20%;
+	max-width: 80%
+}
+
+.user-head-pic, .name {
+	 cursor: pointer;
+}
+
+.user-head-pic {
+	width: 50px;
+	display: inline-block;
+}
+
+.head-pic {
+	width: 50px;
+	height: 50px;	
+	border-radius: 50px;
+}
+
+.name-time {
+	width: 200px;
+	margin-left: 20px;
+    justify-content: space-around;
+}
+
+.name {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.time {
+	width: 200px;
+}
+
+.participated-style{
+	color: #1dc400;
+}
+
+.participate-activity-container a{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.participate-activity-container a img {
+	margin-right: 2px;
+	width: 35px;
+	height: 35px;
+}
+
+.activity-container {
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.cover-container {
+	margin: 20px 0;
+}
+
+.cover-container img {
+	width: 100%
+}
+
+.activity-container ul {
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+}
+
+.activity-container ul li{
+	margin-bottom: 30px;
+	color: #707070;
+}
+
+.data-container {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.data-container img {
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.content{
+	font-size: 16px;
+	padding-bottom: 20px;
+	line-height: 30px;
+}

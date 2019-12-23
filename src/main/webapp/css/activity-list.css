@@ -1,0 +1,153 @@
+.main {
+	max-width: 960px;
+	margin: 25px auto 0;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0 10px #ebeaea;
+	font-family: "微软雅黑";
+}
+
+.activity-type-container {
+	padding: 20px 10px 10px;
+}
+
+.activity-type-container ul{
+	display: flex;
+}
+
+.activity-type-container ul li{
+	padding: 0 10px;
+}
+
+.activity-type-container a:hover{
+	color: #007FFF;
+}
+
+.activity-type{
+	color: #007FFF;
+}
+
+.main-header {
+	padding: 10px 0 20px 20px;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.time-selector {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.time-selector li {
+	cursor: pointer;
+	padding: 0 15px;
+	color: #90979c;
+}
+
+.time-selector .ac {
+	color: #007fff;
+}
+
+.article-list-container{
+	display: flex;
+}
+
+.data-container input{
+	height: 30px;
+	width: 200px;
+	padding-left: 8px ;
+	outline: none;
+	border: 1px solid #B2B2B2;
+	border-radius: 2px;
+	font-size: 15px;
+}
+
+.article-list-container ul{
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.article-list-container ul li{
+	float: left;
+	width: 215px;
+    margin: 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.activity-info img{
+	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+}
+
+.data {
+	display: flex;
+	align-items: center;
+}
+
+.activity-cover{
+	height: 215px;
+	width: 215px;
+}
+
+.activity-info {
+	margin: 5px 10px 5px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #8a8a8a;
+	
+}
+
+.activity-operate{
+	font-size: 12px;
+	margin: 0 10px 5px;
+}
+
+.activity-operate{
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.activity-operate a{
+	display: flex;
+	align-items: center;
+}
+
+.activity-detail{
+	line-height: 25px;
+}
+
+.activity-detail a, .edit-delete a {
+	color: #8a8a8a;
+}
+
+.activity-detail a:hover, .edit-delete a:hover {
+	color: #007FFF;
+}
+
+.edit-delete {
+	display: flex;
+	line-height: 25px;
+}
+
+.edit-activity {
+	margin-right: 10px;
+}
+
+.participate-activity {
+	display: flex;
+	align-items: center;
+}
+
+.participate-activity img {
+	width: 20px;
+	height: 20px;
+}
+
+.participated-style{
+	color: #1dc400;
+}
+

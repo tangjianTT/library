@@ -1,0 +1,112 @@
+.main {
+    max-width: 960px;
+    margin: 25px auto 0;
+    background: #fff;
+    box-shadow: 0 0 10px #ebeaea;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 25px;
+    height: 40px;
+    font-size: 15px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav li {
+    cursor: pointer;
+    padding: 0 15px;
+    color: #90979c;
+}
+
+.main-nav .ac {
+    color: #007fff;
+}
+
+.content .item {
+    padding: 15px 25px;
+    display: flex;
+	justify-content: space-between;
+}
+.item{
+    border-bottom: 1px solid #DDDDDD;
+}
+.content-left{
+	float: left;
+}
+.content-right{
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+.content-right img{
+    width: 100px;
+    height: 100px;
+}
+
+.item-subtitle {
+	margin-top: 20px;
+}
+.item-subtitle-text ::after {
+    /*content: "\B7";*/
+    margin: 0 5px;
+    color: #8f969c;
+}
+
+.item-subtitle-text{
+	display: flex;
+    font-size: 12px;
+	/*justify-content: space-around;*/
+}
+
+.item-subtitle ul li{
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	border: 1px solid #edeeef;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin-right: 10px;
+    padding: 0 8px;
+}
+
+.item-title{
+	font-family: "微软雅黑" ;
+	font-size: 18px;
+}
+
+.item-user{
+	margin-top: 15px;
+}
+
+.item-user a{
+	color: #ADADAD;
+}
+
+.item-info{
+	color: #ADADAD;
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.normal{
+    color: #b2bac2;
+}
+
+.liked{
+    color: #1dc400;
+}
+
+.collected{
+    color: #1dc400;
+}
