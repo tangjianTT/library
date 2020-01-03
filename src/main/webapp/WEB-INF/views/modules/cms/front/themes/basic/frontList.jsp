@@ -46,14 +46,14 @@
 				              <i class="p_ab activityTag activityTag_doing"></i></c:if>
  				             
  				          <c:if test="${nowDate - actOrganization.startDate.time <0 && nowDate - actOrganization.endDate.time <0}">
- 				             <i class="p_ab activityTag activityTag_well"> </i>
+ 				             <i class="p_ab activityTag activityTag_well"></i>
  				             </c:if>
  				             
  				              <c:if test="${nowDate - actOrganization.endDate.time >0}">
  				           <i class="p_ab activityTag activityTag_close"></i></c:if>
  				           
 				 			<div style="width:240px;height:150px;overflow:hidden;float:left;">	
-				 			<img class="pull-left" width="240" src="/party-build/images/activity_default.png" alt="">	
+				 			<img class="pull-left" width="240" src="/images/activity_default.png" alt="">
 				 			</div>															
 				 			<div class="pull-left m_l_15" style="width:555px;height:150px;margin-left: 263px;margin-top: -148px;">			
 				 			<!-- <h4 class="act_h" style="background-color: white;width: 518px;margin :-13px;height: 25px;"> -->
@@ -63,12 +63,25 @@
 				 			<span > &nbsp;&nbsp;${actOrganization.office.name}</span></p>
 				 			<span class="font_12 display_block p_l_30 m_t_10 activity_icon_address" style="background-position: -1% 44%;background-position: -1% 44%;margin-top: 14px;">${actOrganization.place}</span>
 				 			<span class="font_12 display_block p_l_30 m_t_10 activity_icon_time" style="background-position: -0.9% 49.8%;"> <fmt:formatDate value="${actOrganization.startDate}" pattern="yyyy-MM-dd HH:mm:ss"/>    至   <fmt:formatDate value="${actOrganization.endDate}" pattern="yyyy-MM-dd HH:mm:ss"/>  </span>	
-				 			<span class="font_12 display_block p_l_30 m_t_10 activity_icon_address" style="background-position: -1% 60%;">${actOrganization.actDescribe}    </span>		</div>						
+				 			<span class="font_12 display_block p_l_30 m_t_10 activity_icon_address" style="background-position: -1% 60%;">${actOrganization.actDescribe} xxxxxx   </span>		</div>
 				 			<div class="p_ab over_h" style="right:40px;top:45px;width:104px;">	
 				 			<i class="pull-left color_999 p_l_30 numActivity display_block"><i class="color_f1342c">${actOrganization.count}</i><i class="color_999 display_none">/ ${actOrganization.count} 人</i></i>																									        
 			 			   <c:if test="${actOrganization.flag ne '1'}">
-			 			   <input  type="button" class="activitySignUp text-center font_14" onclick="signUp('${actOrganization.id}')" value="点击报名" >
-				 			</c:if>
+								<c:if test="${nowDate - actOrganization.startDate.time <0 && nowDate - actOrganization.endDate.time <0}">
+
+								<input  type="button" class="activitySignUp text-center font_14" onclick="signUp('${actOrganization.id}')" value="点击报名" >
+								</c:if>
+
+							   <c:if test="${nowDate - actOrganization.startDate.time > 0 && nowDate - actOrganization.endDate.time < 0}">
+
+								   <input  type="button" class="activitySignUp text-center font_14"  readonly="readonly" value="点击报名" >
+							   </c:if>
+
+							   <c:if test="${nowDate - actOrganization.endDate.time >0}">
+								   <input  type="button" class="activitySignUp text-center font_14"  readonly="readonly" value="点击报名" >
+
+							   </c:if>
+								</c:if>
 				 			<c:if test="${actOrganization.flag eq '1'}">
 				 			 <input  type="button" class="activitySignUp text-center font_14"  readonly="readonly" value="已报名" >
 				 			</c:if>

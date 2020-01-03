@@ -236,19 +236,19 @@ a.link_click:active,a.link_click:focus{color:#000;text-decoration: none;}
 .icon_comment_active{background-position: -4px -491px;}
 
 .topActivity li:hover a,.topActivity li:hover span{color:#F1342C;}
-.numActivity{background:url(/party-build/images/icon_activity.png) no-repeat 10% 55%;}
-.activity_icon_address{background:url(/party-build/images/icon_activity.png) no-repeat -2% 44%;}
-.activity_icon_time{background:url(/party-build/images/icon_activity.png) no-repeat -2% 49.3%;}
+.numActivity{background:url(/images/icon_activity.png) no-repeat 10% 55%;}
+.activity_icon_address{background:url(/images/icon_activity.png) no-repeat -2% 44%;}
+.activity_icon_time{background:url(/images/icon_activity.png) no-repeat -2% 49.3%;}
 .activityTag{
 	left:10px;top:0;
 	display:block;
 	width:20px;
 	height:70px;
 }
-.activityTag_well{background:url(/party-build/images/icon_activity.png) no-repeat 50% 22%;}
-.activityTag_doing{background:url(/party-build/images/icon_activity.png) no-repeat 8% 22%;}
+.activityTag_well{background:url(/images/icon_activity.png) no-repeat 50% 22%;}
+.activityTag_doing{background:url(/images/icon_activity.png) no-repeat 8% 22%;}
 .activityTag_close{
-	background:url(/party-build/images/icon_activity.png) no-repeat 92% 22%;
+	background:url(/images/icon_activity.png) no-repeat 92% 22%;
 }
 .classification{width:998px;border:1px solid #eeeeee;}
 .classification .firstType{height:74px;border-bottom:1px solid #eee;}

@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2005-2012 springside.org.cn
- */
 package com.neusoft.library.common.beanvalidator;
 
 import java.util.List;
@@ -22,10 +19,9 @@ import com.google.common.collect.Maps;
  * 1. List<String>, String内容为message
  * 2. List<String>, String内容为propertyPath + separator + message
  * 3. Map<propertyPath, message>
- * 
- * 详情见wiki: https://github.com/springside/springside4/wiki/HibernateValidator
+ *
  * @author calvin
- * @version 2013-01-15
+ * @version
  */
 public class BeanValidators {
 

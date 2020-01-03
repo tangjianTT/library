@@ -19,7 +19,7 @@ public class EmailVerificationCodeUtils {
             email.setAuthentication("1329025765@qq.com", "dlkgfhsjrexzjefc"); //此处填写邮箱地址和客户端授权码
 
             email.setSSLOnConnect(true);
-            email.setSubject("图书馆借阅系统平台党建注册验证码");//此处填写邮件名，邮件名可任意填写
+            email.setSubject("图书馆借阅系统平台注册验证码");//此处填写邮件名，邮件名可任意填写
             email.setMsg("尊敬的用户，您的验证码为：" + code + "，请勿泄露于他人！5分钟内有效！");//此处填写邮件内容
 
             email.send();

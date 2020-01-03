@@ -15,7 +15,7 @@
 
 
 
-    <div class="hero-unit" style="padding-bottom:35px;margin:150px 0 10px;  ">
+    <div class="hero-unit" style="padding-bottom:35px;margin:150px 0 10px; opacity:0.7;  ">
       <c:set var="article" value="${fnc:getArticle('1')}"/>
       <h1>${fns:abbr(article.title,28)}</h1><p></p>
       <p>${fns:abbr(fns:replaceHtml(article.articleData.content),260)}</p>
@@ -31,7 +31,7 @@
       <div class="span4" style="margin-left: 34px;">
         <h4 style="background-color:red;color: white"> <small><a href="${ctx}/list-6${urlSuffix}" class="pull-right">更多&gt;&gt;</a></small>在线阅书</h4>
 		<ul><c:forEach items="${fnc:getLinkList(site.id, 6, 4, '')}" var="link">
-			<li> ${link.title}<span class="pull-right"><fmt:formatDate value="${link.updateDate}" pattern="yyyy.MM.dd"/></span><a href="${link.href}" style="color:${link.color}">${fns:abbr(link.title,28)}</a></li>
+			<li><span class="pull-right"><fmt:formatDate value="${link.updateDate}" pattern="yyyy.MM.dd"/></span><a href="${link.href}" style="color:${link.color}">${fns:abbr(link.title,28)}</a></li>
 		</c:forEach></ul>
       </div>
       <div class="span4" style="margin-right: -9px;margin-left: 34px;">

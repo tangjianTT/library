@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.cmm.web;
 
 import javax.servlet.http.HttpServletRequest;
@@ -44,6 +42,7 @@ public class PersonalCommentController extends BaseController {
 			entity = new PersonalComment();
 		}
 		return entity;
+
 	}
 	
 	@RequiresPermissions("cmm:personalComment:view")

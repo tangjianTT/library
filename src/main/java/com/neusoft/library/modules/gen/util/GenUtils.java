@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.util;
 
 import java.io.BufferedReader;
@@ -38,8 +36,6 @@ import com.neusoft.library.modules.sys.utils.UserUtils;
 
 /**
  * 代码生成工具类
- * @author ThinkGem
- * @version 2013-11-16
  */
 public class GenUtils {
 

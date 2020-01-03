@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.entity;
 
 import org.hibernate.validator.constraints.Length;
@@ -9,8 +7,6 @@ import com.neusoft.library.common.persistence.DataEntity;
 
 /**
  * 生成方案Entity
- * @author ThinkGem
- * @version 2013-10-15
  */
 public class GenScheme extends DataEntity<GenScheme> {
 	

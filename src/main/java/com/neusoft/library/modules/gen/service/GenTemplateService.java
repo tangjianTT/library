@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.service;
 
 import org.apache.commons.lang3.StringEscapeUtils;
@@ -16,8 +14,6 @@ import com.neusoft.library.modules.gen.dao.GenTemplateDao;
 
 /**
  * 代码模板Service
- * @author ThinkGem
- * @version 2013-10-15
  */
 @Service
 @Transactional(readOnly = true)

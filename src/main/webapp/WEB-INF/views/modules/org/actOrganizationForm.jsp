@@ -56,10 +56,10 @@
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label">发布组织：</label>
+			<label class="control-label">发布院校：</label>
 			<div class="controls">
 				<sys:treeselect id="office" name="office.id" value="${actOrganization.office.id}" labelName="office.name" labelValue="${actOrganization.office.name}"
-					title="部门" url="/sys/office/treeData?type=2" cssClass="required" allowClear="true" notAllowSelectParent="true"/>
+					title="院校" url="/sys/office/treeData?type=2" cssClass="required" allowClear="true" notAllowSelectParent="true"/>
 				<span class="help-inline"><font color="red">*</font> </span>
 			</div>
 		</div>

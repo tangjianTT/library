@@ -18,7 +18,7 @@ import java.util.Set;
  * .
  * </p>
  *
- * @author poplar.yfyang
+ *
  * @version 1.0 
  * @since JDK 1.5
  */

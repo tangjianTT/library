@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.entity;
 
 import java.util.List;
@@ -13,8 +11,6 @@ import com.neusoft.library.modules.sys.entity.Dict;
 
 /**
  * 生成方案Entity
- * @author ThinkGem
- * @version 2013-10-15
  */
 @XmlRootElement(name="category")
 public class GenCategory extends Dict {

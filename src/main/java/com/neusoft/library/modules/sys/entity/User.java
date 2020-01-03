@@ -25,11 +25,11 @@ import com.neusoft.library.common.utils.excel.fieldtype.RoleListType;
 public class User extends DataEntity<User> {
 
 	private static final long serialVersionUID = 1L;
-	private Office company;	// 所属院校
-	private Office office;	// 所属团支部
+	private Office company;	// 所属省份
+	private Office office;	// 所属院校
 	private String loginName;// 登录名
 	private String password;// 密码
-	private String no;		// 工号
+	private String no;		 // 学号
 	private String name;	// 姓名
 	private String email;	// 邮箱
 	private String phone;	// 电话
@@ -91,8 +91,8 @@ public class User extends DataEntity<User> {
 	}
 
 	@JsonIgnore
-	@NotNull(message="所属院校不能为空")
-	@ExcelField(title="所属院校", align=2, sort=20)
+	@NotNull(message="所属省份不能为空")
+	@ExcelField(title="所属省份", align=2, sort=20)
 	public Office getCompany() {
 		return company;
 	}
@@ -102,8 +102,8 @@ public class User extends DataEntity<User> {
 	}
 	
 	@JsonIgnore
-	@NotNull(message="所属团支部不能为空")
-	@ExcelField(title="所属团支部", align=2, sort=25)
+	@NotNull(message="所属院校不能为空")
+	@ExcelField(title="所属院校", align=2, sort=25)
 	public Office getOffice() {
 		return office;
 	}
@@ -140,8 +140,8 @@ public class User extends DataEntity<User> {
 		return name;
 	}
 	
-	@Length(min=1, max=100, message="工号长度必须介于 1 和 100 之间")
-	@ExcelField(title="工号", align=2, sort=45)
+	@Length(min=1, max=100, message="学号长度必须介于 1 和 100 之间")
+	@ExcelField(title="学号", align=2, sort=45)
 	public String getNo() {
 		return no;
 	}

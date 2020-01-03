@@ -28,9 +28,9 @@
 			<li><label>活动标题：</label>
 				<form:input path="title" htmlEscape="false" maxlength="64" class="input-medium"/>
 			</li>
-			<li><label>发布组织：</label>
+			<li><label>发布院校：</label>
 				<sys:treeselect id="office" name="office.id" value="${actOrganization.office.id}" labelName="office.name" labelValue="${actOrganization.office.name}"
-					title="部门" url="/sys/office/treeData?type=2" cssClass="input-small" allowClear="true" notAllowSelectParent="true"/>
+					title="院校" url="/sys/office/treeData?type=2" cssClass="input-small" allowClear="true" notAllowSelectParent="true"/>
 			</li>
 			<li><label>开始日期：</label>
 				<input name="beginStartDate" type="text" readonly="readonly" maxlength="20" class="input-medium Wdate"
@@ -49,7 +49,7 @@
 		<thead>
 			<tr>
 				<th>活动标题</th>
-				<th>发布组织</th>
+				<th>发布院校</th>
 				<th>活动描述</th>
 				<th>活动地点</th>
 				<th>开始日期</th>

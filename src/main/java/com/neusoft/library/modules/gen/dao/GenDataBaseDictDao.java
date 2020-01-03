@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.dao;
 
 import java.util.List;
@@ -12,8 +10,6 @@ import com.neusoft.library.modules.gen.entity.GenTableColumn;
 
 /**
  * 业务表字段DAO接口
- * @author ThinkGem
- * @version 2013-10-15
  */
 @MyBatisDao
 public interface GenDataBaseDictDao extends CrudDao<GenTableColumn> {

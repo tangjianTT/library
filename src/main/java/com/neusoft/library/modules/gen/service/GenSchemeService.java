@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.service;
 
 import java.util.List;
@@ -25,8 +23,6 @@ import com.neusoft.library.modules.gen.util.GenUtils;
 
 /**
  * 生成方案Service
- * @author ThinkGem
- * @version 2013-10-15
  */
 @Service
 @Transactional(readOnly = true)

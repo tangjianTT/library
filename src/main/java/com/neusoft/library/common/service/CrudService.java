@@ -2,6 +2,7 @@ package com.neusoft.library.common.service;
 
 import java.util.List;
 
+import com.neusoft.library.modules.userlib.entity.SysUserLib;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -91,5 +92,4 @@ public abstract class CrudService<D extends CrudDao<T>, T extends DataEntity<T>>
 	public void delete(T entity) {
 		dao.delete(entity);
 	}
-
 }

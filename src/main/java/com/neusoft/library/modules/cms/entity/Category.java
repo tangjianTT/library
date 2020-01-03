@@ -21,7 +21,7 @@ public class Category extends TreeEntity<Category> {
 
 	private static final long serialVersionUID = 1L;
 	private Site site;		// 归属站点
-	private Office office;	// 所属团支部
+	private Office office;	// 所属院校
 //	private Category parent;// 父级菜单
 //	private String parentIds;// 所有父级编号
 	private String module; 	// 栏目模型（article：文章；picture：图片；download：下载；link：链接；special：专题）

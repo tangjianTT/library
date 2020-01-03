@@ -1,6 +1,4 @@
-/**
- * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
- */
+
 package com.neusoft.library.modules.gen.web;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,8 +23,6 @@ import com.neusoft.library.modules.gen.service.GenTemplateService;
 
 /**
  * 代码模板Controller
- * @author ThinkGem
- * @version 2013-10-15
  */
 @Controller
 @RequestMapping(value = "${adminPath}/gen/genTemplate")

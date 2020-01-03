@@ -2,7 +2,7 @@ package com.neusoft.library.common.beanvalidator;
 
 /**
  * 添加Bean验证组
- * @author ThinkGem
+ * @author
  *
  */
 public interface AddGroup {

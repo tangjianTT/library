@@ -10,7 +10,7 @@ import org.apache.ibatis.session.SqlSession;
  * .
  * </p>
  *
- * @author poplar.yfyang
+ *
  * @version 1.0 
  * @since JDK 1.5
  */

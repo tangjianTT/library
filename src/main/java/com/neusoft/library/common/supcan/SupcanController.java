@@ -184,7 +184,7 @@ public class SupcanController extends BaseController {
 		// 设置树列表，表头
 		List<Object> cols = treeList.getCols();
 		cols.add(new Col("id", "编号"));
-		cols.add(new Col("office", "所属团支部"));
+		cols.add(new Col("office", "所属院校"));
 		cols.add(new Col("loginName", "登录名"));
 		cols.add(new Col("name", "名称"));
 		cols.add(new Col("remarks", "备注"));
